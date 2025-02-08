@@ -2,6 +2,7 @@
 import Welcome from "./components/Welcome";
 import Header from "./components/Header";
 import CardProfile from "./components/CardProfile";
+import Counter from "./components/Counter";
 
 type Teacher = {
   year: number,
@@ -36,9 +37,8 @@ function App() {
   return (
     <>
       <Welcome />
-      <h1>Hello World</h1>
 
-      <div style={{ display: 'flex', gap: '1rem', flexDirection: 'column'}}>
+      {/* <div style={{ display: 'flex', gap: '8px', flexDirection: 'row'}}>
         {teachers.map((teacher) => (
           <CardProfile
             key={teacher.id}
@@ -47,7 +47,9 @@ function App() {
             birthday={teacher.year}
           />
         ))}
-      </div>
+      </div> */}
+
+      <Counter />
 
       <Header />
     </>
